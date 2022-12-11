@@ -1,7 +1,7 @@
 const fs = require("fs");
 
 const FILE_NAME = "automation.txt";
-const LAST_NUMBER = 9499999; // 'Invalid string length' if bigger
+const LAST_NUMBER = 1_690_420; // 'Invalid string length' if bigger
 
 const getTextData = () => {
   let data = "";
@@ -9,9 +9,9 @@ const getTextData = () => {
     var even_odd = i % 2 == 0 ? "even" : "odd";
     data += `${
       i != 0 ? "  : " : ""
-    }number === ${i}\n  ? console.log("Number is ${even_odd}")\n${
-      i == LAST_NUMBER ? "  : null;" : ""
-    }`;
+    }number === ${i}\n  ? console.log("Number is ${even_odd}${
+      i == 69 ? " - nice" : ""
+    }")\n${i == LAST_NUMBER ? "  : null;" : ""}`;
   }
   return data;
 };
