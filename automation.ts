@@ -1,7 +1,7 @@
 const fs = require("fs");
 
 const FILE_NAME = "automation.txt";
-const LAST_NUMBER = 1_690_420; // 'Invalid string length' if bigger
+const LAST_NUMBER = 18_420; // 'Invalid string length' if bigger
 
 const getTextData = () => {
   let data = "";

@@ -8,10 +8,10 @@ const checkEvenOrOdd = (number) => {
     console.log("Input is not a number");
     return;
   }
-  if (number > 1_690_420 || number < 0) {
+  if (number > 18_420 || number < 0) {
     console.log(
       `Number is ${
-        number < 0 ? "too small" : number > 1_690_420 ? "too big" : null
+        number < 0 ? "too small" : number > 18_420 ? "too big" : null
       }`
     );
     return;
